@@ -59,9 +59,9 @@ const brandFeatures = [
 
 export default function ServicesPage() {
   return (
-    <main className="flex-1 pt-20">
-      <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-5">
-        <div className="max-w-[960px] mx-auto">
+    <main className="flex-1  fade-up stagger">
+      <div className="px-4 sm:px-8 md:px-20 lg:px-10 py-5">
+        <div className="max-w-[1500px] mx-auto">
           {/* Hero Section */}
           <section className="py-16 sm:py-20 lg:py-24">
             <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -77,7 +77,7 @@ export default function ServicesPage() {
                   <Button variant="secondary">Our Work</Button>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 relative h-96">
+              <div className="w-full md:w-1/2 relative h-96 fade-up stagger">
                 <Image 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaxutDE_4hsu7yo5d1tDnLIWQC1ufJXaPo1u3vYWxHARIp_TZ6KVpECjmhmDNMDPbUuGeMUbDMkg-vLqmvGVHFTHWk_cPf-whC3dDFfdKH5QtThgs94KVHQp0bnH81Fv_phaBwONC3A3v8LEjJvZKr6xkeZFbevON-B9ahohuUz_uAThpR_okPVX-pjSHU1nIEpEi4Hir6LwyX-GYgWPz-bdDwISecIkG6iPLuvrBTlxC4X_jnS--WplCWGTlv6nss7FEEarBHb6rQ"
                   alt="Abstract gradient"
@@ -89,7 +89,7 @@ export default function ServicesPage() {
           </section>
 
           {/* Web Development */}
-          <section className="py-16 border-t border-primary/20">
+          <section className="py-16 border-t border-primary/20 fade-up stagger">
             <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
               Custom Web Development
             </h2>
@@ -105,7 +105,7 @@ export default function ServicesPage() {
           </section>
 
           {/* Video Editing */}
-          <section className="py-16 border-t border-primary/20">
+          <section className="py-16 border-t border-primary/20 fade-up stagger">
             <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
               Engaging Video Editing
             </h2>
@@ -121,7 +121,7 @@ export default function ServicesPage() {
           </section>
 
           {/* Brand Design */}
-          <section className="py-16 border-t border-primary/20">
+          <section className="py-16 border-t border-primary/20 fade-up stagger">
             <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
               Strategic Brand Design
             </h2>

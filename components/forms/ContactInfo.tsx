@@ -20,7 +20,7 @@ const contactDetails = [
 
 export default function ContactInfo() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 fade-up stagger">
       <div className="space-y-4">
         <h3 className="text-white text-xl font-bold">
           Contact Information

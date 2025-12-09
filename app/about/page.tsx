@@ -24,9 +24,9 @@ const team = [
 
 export default function AboutPage() {
   return (
-    <main className="flex-1 pt-20">
-      <div className="px-4 sm:px-10 md:px-20 lg:px-40 py-5">
-        <div className="max-w-[960px] mx-auto">
+    <main className="flex-1  fade-up stagger">
+      <div className="px-4 sm:px-8 md:px-20 lg:px-10 py-5">
+        <div className="max-w-[1500px] mx-auto">
           {/* Hero Section */}
           <Hero 
             title="Building Digital Experiences That Matter"
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <MissionValues />
 
           {/* Our Story */}
-          <section className="mb-16 p-4">
+          <section className="mb-16 p-4 fade-up stagger">
             <h2 className="text-white text-2xl font-bold mb-6">
               Our Story & History
             </h2>
@@ -61,7 +61,7 @@ export default function AboutPage() {
           </section>
 
           {/* Team Section */}
-          <section className="mb-16">
+          <section className="mb-16 fade-up stagger">
             <h2 className="text-white text-2xl font-bold px-4 mb-6">
               Meet the Team
             </h2>

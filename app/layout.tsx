@@ -3,6 +3,7 @@ import { Space_Grotesk } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import './globals.css';
+import GradientBackground from '@/components/ui/GradientBackground';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -32,7 +33,7 @@ export default function RootLayout({
         <div className="relative flex min-h-screen w-full flex-col overflow-hidden">
           {/* Background Decorations */}
           <svg 
-            className="absolute top-0 left-0 w-64 h-auto text-primary/20  -translate-x-1/2 -translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
+            className="absolute top-0 left-0 w-64 h-auto text-primary/20 bg-decor -translate-x-1/2 -translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
             fill="none" 
             stroke="currentColor" 
             strokeLinecap="round" 
@@ -45,7 +46,7 @@ export default function RootLayout({
           </svg>
           
           <svg 
-            className="absolute bottom-0 right-0 w-64 h-auto text-primary/20  translate-x-1/2 translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
+            className="absolute bottom-0 right-0 w-64 h-auto text-primary/20 bg-decor translate-x-1/2 translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
             fill="none" 
             stroke="currentColor" 
             strokeLinecap="round" 
@@ -59,7 +60,9 @@ export default function RootLayout({
 
           <Header />
           <main className="flex-1 container mx-auto px-6 py-12 fade-up">
+            
             {children}
+            <GradientBackground />
           </main>
           <Footer />
         </div>

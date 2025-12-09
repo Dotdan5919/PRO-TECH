@@ -48,9 +48,9 @@ export default function PortfolioPage() {
     : projects.filter(p => p.category === selectedCategory);
 
   return (
-    <main className="flex-1 pt-20">
-      <div className="px-4 sm:px-10 md:px-20 lg:px-40 py-5">
-        <div className="max-w-[960px] mx-auto">
+    <main className="flex-1  fade-up stagger">
+      <div className="px-4 sm:px-8 md:px-20 lg:px-10 py-5">
+        <div className="max-w-[1500px] mx-auto">
           {/* Header */}
           <div className="flex flex-wrap justify-between gap-3 p-4 mb-8">
             <div className="flex min-w-72 flex-col gap-3">
@@ -64,7 +64,7 @@ export default function PortfolioPage() {
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex gap-3 p-3 flex-wrap mb-8">
+          <div className="flex gap-3 p-3 flex-wrap mb-8 fade-up stagger">
             {categories.map((category) => (
               <button
                 key={category}
@@ -81,7 +81,7 @@ export default function PortfolioPage() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mb-16">
+          <div className=" fade-up stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mb-16">
             {filteredProjects.map((project) => (
               <div
                 key={project.title}

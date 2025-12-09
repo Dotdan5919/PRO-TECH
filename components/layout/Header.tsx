@@ -20,7 +20,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-background-light/80  backdrop-blur-sm border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-[#240202]/80  backdrop-blur-sm border-b border-white/10">
       <div className="container mx-auto px-4 sm:px-10">
         <div className="flex items-center justify-between py-3">
           {/* Logo */}

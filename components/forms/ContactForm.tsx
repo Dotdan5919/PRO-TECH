@@ -45,7 +45,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-6 fade-up stagger">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <label className="flex flex-col">
           <span className="text-slate-300 text-sm font-medium mb-2">

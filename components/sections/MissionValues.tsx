@@ -20,7 +20,7 @@ const values = [
 
 export default function MissionValues() {
   return (
-    <section className="py-16">
+    <section className="py-16 fade-up stagger">
       <div className="container mx-auto px-4">
         <h2 className="text-white text-2xl font-bold mb-6">
           Our Mission & Values

@@ -3,14 +3,15 @@ import Services from '@/components/sections/Services';
 import FeaturedProjects from '@/components/sections/FeaturedProjects';
 import Testimonials from '@/components/sections/Testimonials';
 import CTA from '@/components/sections/CTA';
+import DiagonalTicker from '@/components/ui/DiagonalTicker';
 
 export default function HomePage() {
   return (
     <main className="flex-1">
-      <div className="px-4 sm:px-8 md:px-20 lg:px-40 py-5">
-        <div className="max-w-[960px] mx-auto">
+      <div className="px-4 sm:px-8 md:px-20 lg:px-10 py-5">
+        <div className="max-w-[1500px] mx-auto">
           {/* Hero Section */}
-          <div className="pt-10">
+          <div className="pt-10 fade-up stagger">
             <div className="p-4">
               <div 
                 className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-start justify-end px-4 pb-10 sm:px-10"
@@ -32,6 +33,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+          {/* Diagonal moving text ticker */}
+          <DiagonalTicker />
 
           {/* Services Section */}
           <Services />

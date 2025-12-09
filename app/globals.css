@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
 
+
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-background-light: #f7f6f8;
+  --color-background-dark: #080110;
+  --color-primary: #f00f0f;
+  --color-primary-hover: #B22222;
+  --color-secondary: #ff4081;
+  --color-secondary-hover: #e73370;
+  --color-accent: #00e5ff;
+  --color-accent-hover: #00b8d4;  
+
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
 /* Material Symbols font settings */
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -9,6 +30,53 @@
 /* Custom utilities */
 .text-balance {
   text-wrap: balance;
+}
+
+/* Diagonal ticker animations */
+@keyframes slide-diagonal {
+  0% {
+    transform: translate(-120%, -30px);
+  }
+  100% {
+    transform: translate(120%, 30px);
+  }
+}
+
+.diagonal-ticker {
+  overflow: hidden;
+  position: relative;
+}
+
+.diagonal-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  /* slower: increased duration */
+  animation: slide-diagonal 28s linear infinite;
+}
+
+.diagonal-track--fast {
+  /* slower fast line: increased duration */
+  animation-duration: 20s;
+}
+
+.diagonal-blur {
+  filter: blur(4px) saturate(0.9);
+  opacity: 0.7;
+}
+
+.diagonal-item {
+  display: inline-block;
+  margin-right: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Decorative background blur */
+.bg-decor {
+  filter: blur(30px);
+  transform-origin: center;
+  opacity: 0.25;
 }
 
 .float-smooth {
@@ -38,3 +106,5 @@
     transform: translateY(0);
   }
 }
+
+

@@ -5,9 +5,9 @@ export default function ContactPage() {
   return (
     <main className="flex-1 pt-20">
       <div className="container mx-auto px-4 py-16 sm:py-24">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-[1500px] mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 fade-up stagger">
             <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
               Let's Build Something Great Together.
             </h1>
@@ -17,7 +17,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form & Info Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 fade-up stagger">
             {/* Contact Form */}
             <div className="lg:col-span-3 bg-black/20 p-8 rounded-xl shadow-sm">
               <h2 className="text-white text-2xl font-bold mb-6">
