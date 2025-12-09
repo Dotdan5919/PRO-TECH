@@ -23,10 +23,10 @@ export default function Services() {
     <section className="py-16 fade-up">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-4 mb-8">
-          <h2 className="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">
             What We Do
           </h2>
-          <p className="text-slate-600 dark:text-white/70 text-base md:text-lg max-w-2xl">
+          <p className="text-white/70 text-base md:text-lg max-w-2xl">
             We offer a complete suite of creative and technical services to elevate your brand.
           </p>
         </div>

@@ -48,7 +48,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <label className="flex flex-col">
-          <span className="text-slate-700 dark:text-slate-300 text-sm font-medium mb-2">
+          <span className="text-slate-300 text-sm font-medium mb-2">
             Full Name
           </span>
           <input
@@ -57,13 +57,13 @@ export default function ContactForm() {
             value={formData.fullName}
             onChange={handleChange}
             required
-            className="form-input flex w-full rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-slate-800/50 h-12 px-4 text-base"
+            className="form-input flex w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-700 bg-slate-800/50 h-12 px-4 text-base"
             placeholder="John Doe"
           />
         </label>
 
         <label className="flex flex-col">
-          <span className="text-slate-700 dark:text-slate-300 text-sm font-medium mb-2">
+          <span className="text-slate-300 text-sm font-medium mb-2">
             Email Address
           </span>
           <input
@@ -72,7 +72,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="form-input flex w-full rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-slate-800/50 h-12 px-4 text-base"
+            className="form-input flex w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-700 bg-slate-800/50 h-12 px-4 text-base"
             placeholder="you@example.com"
           />
         </label>
@@ -80,7 +80,7 @@ export default function ContactForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <label className="flex flex-col">
-          <span className="text-slate-700 dark:text-slate-300 text-sm font-medium mb-2">
+          <span className="text-slate-300 text-sm font-medium mb-2">
             Phone Number <span className="text-slate-500">(Optional)</span>
           </span>
           <input
@@ -88,20 +88,20 @@ export default function ContactForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="form-input flex w-full rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-slate-800/50 h-12 px-4 text-base"
+            className="form-input flex w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-700 bg-slate-800/50 h-12 px-4 text-base"
             placeholder="+1 (555) 000-0000"
           />
         </label>
 
         <label className="flex flex-col">
-          <span className="text-slate-700 dark:text-slate-300 text-sm font-medium mb-2">
+          <span className="text-slate-300 text-sm font-medium mb-2">
             Service of Interest
           </span>
           <select
             name="service"
             value={formData.service}
             onChange={handleChange}
-            className="form-select flex w-full rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-slate-800/50 h-12 px-4 text-base"
+            className="form-select flex w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-700 bg-slate-800/50 h-12 px-4 text-base"
           >
             <option>Web Development</option>
             <option>Video Editing</option>
@@ -112,7 +112,7 @@ export default function ContactForm() {
       </div>
 
       <label className="flex flex-col">
-        <span className="text-slate-700 dark:text-slate-300 text-sm font-medium mb-2">
+        <span className="text-slate-300 text-sm font-medium mb-2">
           Message
         </span>
         <textarea
@@ -121,7 +121,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           rows={5}
-          className="form-textarea flex w-full rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-slate-800/50 p-4 text-base resize-y"
+          className="form-textarea flex w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-700 bg-slate-800/50 p-4 text-base resize-y"
           placeholder="Tell us about your project..."
         />
       </label>

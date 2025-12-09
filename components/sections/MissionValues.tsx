@@ -22,7 +22,7 @@ export default function MissionValues() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-slate-900 dark:text-white text-2xl font-bold mb-6">
+        <h2 className="text-white text-2xl font-bold mb-6">
           Our Mission & Values
         </h2>
         

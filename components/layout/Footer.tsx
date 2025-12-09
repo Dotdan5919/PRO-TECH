@@ -44,7 +44,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-4 text-slate-900 dark:text-white">
+          <div className="flex items-center gap-4 text-white">
             <div className="w-5 h-5 text-primary">
               <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor" />
@@ -59,7 +59,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors"
+                className="text-slate-500 hover:text-primary transition-colors"
               >
                 {link.label}
               </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
               <a
                 key={social.name}
                 href={social.href}
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary/20 hover:text-primary transition-colors"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 text-slate-400 hover:bg-primary/20 hover:text-primary transition-colors"
                 aria-label={social.name}
               >
                 {social.icon}
@@ -83,7 +83,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-6 text-center">
-          <p className="text-sm text-slate-500 dark:text-slate-400">
+          <p className="text-sm text-slate-400">
             © {new Date().getFullYear()} ProTech. All rights reserved.
           </p>
         </div>

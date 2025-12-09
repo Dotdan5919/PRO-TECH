@@ -20,11 +20,11 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-background-light/80  backdrop-blur-sm border-b border-white/10">
       <div className="container mx-auto px-4 sm:px-10">
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-4 text-slate-900 dark:text-white">
+          <Link href="/" className="flex items-center gap-4 text-white">
             <Icon name="hub" className="text-primary text-2xl" />
             <h2 className="text-lg font-bold leading-tight tracking-tight">ProTech</h2>
           </Link>
@@ -39,7 +39,7 @@ export default function Header() {
                   'text-sm font-medium leading-normal transition-colors',
                   pathname === item.href
                     ? 'text-primary'
-                    : 'text-slate-700 dark:text-white/80 hover:text-primary'
+                    : 'text-white/80 hover:text-primary'
                 )}
               >
                 {item.label}
@@ -55,7 +55,7 @@ export default function Header() {
             
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden text-slate-900 dark:text-white"
+              className="md:hidden text-white"
               aria-label="Toggle menu"
             >
               <Icon name={mobileMenuOpen ? 'close' : 'menu'} className="text-2xl" />
@@ -75,7 +75,7 @@ export default function Header() {
                   'block text-sm font-medium py-2 transition-colors',
                   pathname === item.href
                     ? 'text-primary'
-                    : 'text-slate-700 dark:text-white/80'
+                    : 'text-white/80'
                 )}
               >
                 {item.label}

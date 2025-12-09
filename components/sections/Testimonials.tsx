@@ -26,7 +26,7 @@ export default function Testimonials() {
   return (
     <section className="py-16 fade-up">
       <div className="container mx-auto px-4">
-        <h2 className="text-slate-900 dark:text-white text-2xl font-bold text-center mb-8">
+        <h2 className="text-white text-2xl font-bold text-center mb-8">
           What Our Clients Say
         </h2>
 
@@ -34,7 +34,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="fade-up flex flex-col gap-4 bg-white dark:bg-black/20 p-6 rounded-xl border border-slate-200 dark:border-white/10 card-lift"
+              className="fade-up flex flex-col gap-4 bg-black/20 p-6 rounded-xl border border-white/10 card-lift"
             >
               {testimonial.image && (
                 <div className="flex items-center gap-4">
@@ -47,16 +47,16 @@ export default function Testimonials() {
                     />
                   </div>
                   <div>
-                    <p className="font-bold text-slate-900 dark:text-white">
+                    <p className="font-bold text-white">
                       {testimonial.author}
                     </p>
-                    <p className="text-sm text-slate-600 dark:text-white/60">
+                    <p className="text-sm text-white/60">
                       {testimonial.role}
                     </p>
                   </div>
                 </div>
               )}
-              <p className="text-slate-700 dark:text-white/80 italic">
+              <p className="text-white/80 italic">
                 "{testimonial.quote}"
               </p>
             </div>

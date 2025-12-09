@@ -22,7 +22,7 @@ export default function ContactInfo() {
   return (
     <div className="space-y-8">
       <div className="space-y-4">
-        <h3 className="text-slate-900 dark:text-white text-xl font-bold">
+        <h3 className="text-white text-xl font-bold">
           Contact Information
         </h3>
         
@@ -30,7 +30,7 @@ export default function ContactInfo() {
           <div key={detail.label} className="flex items-start gap-4">
             <Icon name={detail.icon} className="text-primary mt-1" />
             <div>
-              <p className="text-slate-600 dark:text-slate-400 whitespace-pre-line">
+              <p className="text-slate-400 whitespace-pre-line">
                 {detail.value}
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function ContactInfo() {
           <a
             key={social}
             href="#"
-            className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary/20 hover:text-primary transition-colors"
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary/20 hover:text-primary transition-colors"
             aria-label={social}
           >
             <Icon name={social} className="text-base" />

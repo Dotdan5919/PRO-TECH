@@ -66,10 +66,10 @@ export default function ServicesPage() {
           <section className="py-16 sm:py-20 lg:py-24">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="flex flex-col gap-6 text-left md:w-1/2">
-                <h1 className="text-slate-900 dark:text-white text-4xl md:text-5xl font-black leading-tight">
+                <h1 className="text-white text-4xl md:text-5xl font-black leading-tight">
                   Building Digital Experiences That Drive Results.
                 </h1>
-                <p className="text-slate-700 dark:text-white/70 text-base md:text-lg">
+                <p className="text-white/70 text-base md:text-lg">
                   ProTech crafts exceptional websites, videos, and brands to elevate your digital presence and drive business growth.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -90,10 +90,10 @@ export default function ServicesPage() {
 
           {/* Web Development */}
           <section className="py-16 border-t border-primary/20">
-            <h2 className="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
               Custom Web Development
             </h2>
-            <p className="text-slate-700 dark:text-white/70 text-base mb-6 max-w-2xl">
+            <p className="text-white/70 text-base mb-6 max-w-2xl">
               We build bespoke websites tailored to your unique business needs, from custom solutions and e-commerce platforms to powerful Content Management Systems.
             </p>
             <Button className="mb-8">View Web Projects</Button>
@@ -106,10 +106,10 @@ export default function ServicesPage() {
 
           {/* Video Editing */}
           <section className="py-16 border-t border-primary/20">
-            <h2 className="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
               Engaging Video Editing
             </h2>
-            <p className="text-slate-700 dark:text-white/70 text-base mb-6 max-w-2xl">
+            <p className="text-white/70 text-base mb-6 max-w-2xl">
               Our video editing services transform your raw footage into compelling stories. We specialize in motion graphics, color grading, and sound design.
             </p>
             <Button className="mb-8">Learn More</Button>
@@ -122,10 +122,10 @@ export default function ServicesPage() {
 
           {/* Brand Design */}
           <section className="py-16 border-t border-primary/20">
-            <h2 className="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
               Strategic Brand Design
             </h2>
-            <p className="text-slate-700 dark:text-white/70 text-base mb-6 max-w-2xl">
+            <p className="text-white/70 text-base mb-6 max-w-2xl">
               We help you build a powerful brand identity that resonates with your target audience. From logo design to complete marketing collateral.
             </p>
             <Button className="mb-8">See Our Branding Work</Button>

@@ -54,10 +54,10 @@ export default function PortfolioPage() {
           {/* Header */}
           <div className="flex flex-wrap justify-between gap-3 p-4 mb-8">
             <div className="flex min-w-72 flex-col gap-3">
-              <h1 className="text-slate-900 dark:text-white text-4xl font-black leading-tight">
+              <h1 className="text-white text-4xl font-black leading-tight">
                 Explore Our Creations
               </h1>
-              <p className="text-slate-600 dark:text-white/60 text-base">
+              <p className="text-white/60 text-base">
                 We combine strategy, design, and technology to build transformative digital experiences.
               </p>
             </div>
@@ -72,7 +72,7 @@ export default function PortfolioPage() {
                 className={`h-8 rounded-full px-4 text-sm font-medium transition-colors ${
                   selectedCategory === category
                     ? 'bg-primary text-white'
-                    : 'bg-slate-200 dark:bg-white/10 text-slate-900 dark:text-white hover:bg-slate-300 dark:hover:bg-primary/50'
+                    : 'bg-white/10 text-white hover:bg-primary/50'
                 }`}
               >
                 {category}

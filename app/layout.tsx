@@ -28,11 +28,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${spaceGrotesk.variable} font-display w-full antialiased text-white bg-[#370c0c] `}>
+      <body className={`${spaceGrotesk.variable} font-display w-full antialiased text-white bg-[#240202] `}>
         <div className="relative flex min-h-screen w-full flex-col overflow-hidden">
           {/* Background Decorations */}
           <svg 
-            className="absolute top-0 left-0 w-64 h-auto text-primary/20 dark:text-primary/10 -translate-x-1/2 -translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
+            className="absolute top-0 left-0 w-64 h-auto text-primary/20  -translate-x-1/2 -translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
             fill="none" 
             stroke="currentColor" 
             strokeLinecap="round" 
@@ -45,7 +45,7 @@ export default function RootLayout({
           </svg>
           
           <svg 
-            className="absolute bottom-0 right-0 w-64 h-auto text-primary/20 dark:text-primary/10 translate-x-1/2 translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
+            className="absolute bottom-0 right-0 w-64 h-auto text-primary/20  translate-x-1/2 translate-y-1/4 pointer-events-none -z-10 float-smooth opacity-30" 
             fill="none" 
             stroke="currentColor" 
             strokeLinecap="round" 

@@ -17,7 +17,7 @@ export default function FeaturedProjects() {
   return (
     <section className="py-16 fade-up">
       <div className="container mx-auto px-4">
-        <h2 className="text-slate-900 dark:text-white text-2xl font-bold mb-6">
+        <h2 className="text-white text-2xl font-bold mb-6">
           Featured Projects
         </h2>
         

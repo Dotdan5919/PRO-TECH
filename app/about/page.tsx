@@ -40,10 +40,10 @@ export default function AboutPage() {
 
           {/* Our Story */}
           <section className="mb-16 p-4">
-            <h2 className="text-slate-900 dark:text-white text-2xl font-bold mb-6">
+            <h2 className="text-white text-2xl font-bold mb-6">
               Our Story & History
             </h2>
-            <div className="flex flex-col md:flex-row gap-8 items-center border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 rounded-lg p-6">
+            <div className="flex flex-col md:flex-row gap-8 items-center border border-white/10 bg-white bg-white/5 rounded-lg p-6">
               <div className="w-full md:w-1/3 relative h-64 md:h-full">
                 <Image 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuChHqGS5R5bka8fhNEXQD_c5rchpwQx2Jb5XdbZ72MImaivaz4e0WWttfocoXo2eBTieldFc-yCic0kl8QS2zYgCGrkeN6ggcDw7qYYSwKcVAcZGvCwtMmdS8u1Cka1m2QIfsnTY64m7OLoW29DMdMFIHsI5URozYDcCYLKGo_GLmHEIgF1f2y99egH_6E2s_YAbhDRci20vxNqRk9x-qK_Fv0m-THzrOx6cifyyK4detB59_KXFuWfRvrmE87RS-aehIYAP7d5Y5Aj"
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="flex-1">
-                <p className="text-slate-600 dark:text-white/60 text-base leading-relaxed">
+                <p className="text-white/60 text-base leading-relaxed">
                   Founded in 2015, ProTech started with a simple idea: to merge creative design with powerful technology. What began as a small team of passionate developers and designers has grown into a full-service digital agency. Over the years, we've helped countless businesses establish their online presence, tell their stories through compelling video, and build unforgettable brands.
                 </p>
               </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
 
           {/* Team Section */}
           <section className="mb-16">
-            <h2 className="text-slate-900 dark:text-white text-2xl font-bold px-4 mb-6">
+            <h2 className="text-white text-2xl font-bold px-4 mb-6">
               Meet the Team
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
