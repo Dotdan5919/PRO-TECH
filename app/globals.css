@@ -79,6 +79,41 @@
   opacity: 0.25;
 }
 
+/* Marquee (infinite horizontal scroll) styles */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  /* the track will be twice the width because we duplicate items in markup */
+  animation: marquee-left 40s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 auto;
+}
+
+/* slower on hover */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* make marquee smoother on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
 .float-smooth {
   animation: float 6s ease-in-out infinite;
 }

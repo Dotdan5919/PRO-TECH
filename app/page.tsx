@@ -4,6 +4,7 @@ import FeaturedProjects from '@/components/sections/FeaturedProjects';
 import Testimonials from '@/components/sections/Testimonials';
 import CTA from '@/components/sections/CTA';
 import DiagonalTicker from '@/components/ui/DiagonalTicker';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -27,9 +28,9 @@ export default function HomePage() {
                     ProTech is your partner in web development, video editing, and brand design. Let us bring your vision to life.
                   </h2>
                 </div>
-                <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 sm:h-12 px-4 sm:px-5 bg-primary hover:bg-primary/90 text-white text-sm sm:text-base font-bold leading-normal tracking-wide transition-colors">
+                <a target='_blank' href='https://wa.me/+2348039625864' className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 sm:h-12 px-4 sm:px-5 bg-primary hover:bg-primary/90 text-white text-sm sm:text-base font-bold leading-normal tracking-wide transition-colors">
                   <span className="truncate">Start Your Project</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
