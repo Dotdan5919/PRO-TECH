@@ -74,8 +74,8 @@ export default function ServicesPage() {
                   ProTech crafts exceptional websites, videos, and brands to elevate your digital presence and drive business growth.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button href="#">Get a Quote</Button>
-                  <Button  href="#" variant="secondary">Our Work</Button>
+                  <Button href="/contact">Get a Quote</Button>
+                  {/* <Button  href="#" variant="secondary">Our Work</Button> */}
                 </div>
               </div>
               <div className="w-full md:w-1/2 relative h-96 fade-up stagger">
@@ -97,7 +97,7 @@ export default function ServicesPage() {
             <p className="text-white/70 text-base mb-6 max-w-2xl">
               We build bespoke websites tailored to your unique business needs, from custom solutions and e-commerce platforms to powerful Content Management Systems.
             </p>
-            <Button className="mb-8">View Web Projects</Button>
+            {/* <Button className="mb-8">View Web Projects</Button> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {webDevFeatures.map((feature) => (
                 <ServiceCard key={feature.title} {...feature} />
@@ -113,7 +113,7 @@ export default function ServicesPage() {
             <p className="text-white/70 text-base mb-6 max-w-2xl">
               Our video editing services transform your raw footage into compelling stories. We specialize in motion graphics, color grading, and sound design.
             </p>
-            <Button className="mb-8">Learn More</Button>
+            {/* <Button className="mb-8">Learn More</Button> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {videoFeatures.map((feature) => (
                 <ServiceCard key={feature.title} {...feature} />
@@ -129,7 +129,7 @@ export default function ServicesPage() {
             <p className="text-white/70 text-base mb-6 max-w-2xl">
               We help you build a powerful brand identity that resonates with your target audience. From logo design to complete marketing collateral.
             </p>
-            <Button className="mb-8">See Our Branding Work</Button>
+            {/* <Button className="mb-8">See Our Branding Work</Button> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {brandFeatures.map((feature) => (
                 <ServiceCard key={feature.title} {...feature} />
