@@ -13,7 +13,7 @@ const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
   { label: 'Services', href: '/services' },
-  { label: 'Portfolio', href: '/portfolio' },
+  // { label: 'Portfolio', href: '/portfolio' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -51,7 +51,7 @@ export default function Header() {
 
           {/* CTA & Mobile Menu */}
           <div className="flex items-center gap-4">
-            <Button size="sm" className="hidden md:flex">
+            <Button size="sm" className="hidden md:flex" href="/contact">
               Get a Quote
             </Button>
             

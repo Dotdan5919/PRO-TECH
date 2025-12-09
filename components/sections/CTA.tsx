@@ -23,7 +23,7 @@ export default function CTA({
           <p className="text-white/80 max-w-2xl text-lg">
             {description}
           </p>
-          <Button size="lg" className="mt-4">
+          <Button size="lg" className="mt-4" href={buttonHref}>
             {buttonText}
           </Button>
         </div>

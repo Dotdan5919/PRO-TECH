@@ -130,6 +130,7 @@ export default function ContactForm() {
         type="submit" 
         disabled={isSubmitting}
         className="w-full sm:w-auto"
+        href="#"
       >
         {isSubmitting ? 'Sending...' : 'Send Message'}
       </Button>

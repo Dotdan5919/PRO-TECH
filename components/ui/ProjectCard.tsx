@@ -12,6 +12,7 @@ export default function ProjectCard({ title, category, image, href = '#' }: Proj
     <a 
       href={href}
       className="group relative overflow-hidden rounded-xl cursor-pointer block"
+      target='_blank'
     >
       <div className="relative h-80 w-full">
         <Image 

@@ -1,21 +1,21 @@
 import Icon from '../ui/Icon';
 
 const contactDetails = [
-  {
-    icon: 'location_on',
-    label: 'Address',
-    value: '123 Tech Avenue, Suite 100\nInnovate City, CA 94103',
-  },
+  // {
+  //   icon: 'location_on',
+  //   label: 'Address',
+  //   value: '123 Tech Avenue, Suite 100\nInnovate City, CA 94103',
+  // },
   {
     icon: 'call',
     label: 'Phone',
-    value: '+1 (234) 567-890',
+    value: '+234 8039625864',
   },
-  {
-    icon: 'mail',
-    label: 'Email',
-    value: 'hello@protech.com',
-  },
+  // {
+  //   icon: 'mail',
+  //   label: 'Email',
+  //   value: 'hello@protech.com',
+  // },
 ];
 
 export default function ContactInfo() {

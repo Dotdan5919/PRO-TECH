@@ -1,18 +1,21 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
-import { clsx } from 'clsx';
+import clsx from 'clsx';
+import Link from 'next/link';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
+  href?: string;
   children: ReactNode;
 }
 
-export default function Button({ 
-  variant = 'primary', 
-  size = 'md', 
-  className, 
-  children, 
-  ...props 
+export default function Button({
+  variant = 'primary',
+  size = 'md',
+  className,
+  href,
+  children,
+  ...props
 }: ButtonProps) {
   const baseStyles = 'font-bold leading-normal tracking-wide transition-all cursor-pointer rounded-xl inline-flex items-center justify-center';
   
@@ -28,11 +31,21 @@ export default function Button({
     lg: 'h-14 px-8 text-lg',
   } as const;
 
+  const classNames = clsx(baseStyles, variants[variant], sizes[size], className);
+
+  if (href) {
+    // When rendering as a Link we intentionally do not forward arbitrary
+    // button-only props to avoid type mismatches; className and children
+    // are sufficient for styling and content.
+    return (
+      <Link href={href} className={classNames}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <button 
-      className={clsx(baseStyles, variants[variant], sizes[size], className)}
-      {...props}
-    >
+    <button className={classNames} {...props}>
       {children}
     </button>
   );

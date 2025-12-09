@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import Icon from '../ui/Icon';
+import Image from 'next/image';
+import Logo from '@/public/images/protech_white.png';
 
 const footerLinks = [
   { label: 'Services', href: '/services' },
-  { label: 'Portfolio', href: '/portfolio' },
+  // { label: 'Portfolio', href: '/portfolio' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -45,12 +47,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-4 text-white">
-            <div className="w-5 h-5 text-primary">
-              <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor" />
-              </svg>
-            </div>
-            <h2 className="text-base font-bold leading-tight">ProTech</h2>
+           <Image src={Logo} alt="ProTech Logo" width={100} height={24} className=" " />
           </div>
 
           {/* Navigation Links */}

@@ -10,25 +10,25 @@ const projects = [
     title: 'Public Health Website',
     category: 'Web Development',
     image: '/images/publichealth.jpg',
-    href: '/portfolio/public-health-website',
+    href: 'https://holistiquepublichealth.com/',
   },
   {
     title: 'Startup Rebranding',
     category: 'Brand Design',
     image: '/images/pavilionEXP.jpg',
-     href: '/portfolio/public-health-website'
+     href: 'https://www.behance.net/gallery/218721591/Public-Health-Ui-case-Study'
   },
   {
     title: 'Salem Edinburgh',
     category: 'Web Development',
     image: '/images/salem.png',
-     href: '/portfolio/public-health-website'
+     href: 'https://salemedinburgh.com/'
   },
   {
     title: 'Kainos Autos',
     category: 'Ui/Ux Design',
     image: '/images/KAE.jpg',
-     href: '/portfolio/public-health-website'
+     href: 'https://www.behance.net/gallery/155631917/Kainos-Autos-Enterprise'
   },
 ];
 

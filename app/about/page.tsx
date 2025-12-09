@@ -3,6 +3,7 @@ import MissionValues from '@/components/sections/MissionValues';
 import TeamMember from '@/components/ui/TeamMember';
 import CTA from '@/components/sections/CTA';
 import Image from 'next/image';
+import CEO from '@/public/images/ceo.jpg';
 
 const team = [
   {
@@ -46,22 +47,22 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row gap-8 items-center border border-white/10 bg-white bg-white/5 rounded-lg p-6">
               <div className="w-full md:w-1/3 relative h-64 md:h-full">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuChHqGS5R5bka8fhNEXQD_c5rchpwQx2Jb5XdbZ72MImaivaz4e0WWttfocoXo2eBTieldFc-yCic0kl8QS2zYgCGrkeN6ggcDw7qYYSwKcVAcZGvCwtMmdS8u1Cka1m2QIfsnTY64m7OLoW29DMdMFIHsI5URozYDcCYLKGo_GLmHEIgF1f2y99egH_6E2s_YAbhDRci20vxNqRk9x-qK_Fv0m-THzrOx6cifyyK4detB59_KXFuWfRvrmE87RS-aehIYAP7d5Y5Aj"
+                  src={CEO}
                   alt="Founders of ProTech"
-                  fill
+                 
                   className="rounded-lg object-cover"
                 />
               </div>
               <div className="flex-1">
                 <p className="text-white/60 text-base leading-relaxed">
-                  Founded in 2015, ProTech started with a simple idea: to merge creative design with powerful technology. What began as a small team of passionate developers and designers has grown into a full-service digital agency. Over the years, we've helped countless businesses establish their online presence, tell their stories through compelling video, and build unforgettable brands.
+                  Founded in 2020, ProTech started with a simple idea: to merge creative design with powerful technology. What began as a small team of passionate developers and designers has grown into a full-service digital agency. Over the years, we've helped countless businesses establish their online presence, tell their stories through compelling video, and build unforgettable brands.
                 </p>
               </div>
             </div>
           </section>
 
           {/* Team Section */}
-          <section className="mb-16 fade-up stagger">
+          {/* <section className="mb-16 fade-up stagger">
             <h2 className="text-white text-2xl font-bold px-4 mb-6">
               Meet the Team
             </h2>
@@ -70,7 +71,7 @@ export default function AboutPage() {
                 <TeamMember key={member.name} {...member} />
               ))}
             </div>
-          </section>
+          </section> */}
 
           {/* CTA */}
           <CTA 

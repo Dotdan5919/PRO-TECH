@@ -2,6 +2,7 @@ import ServiceCard from '@/components/ui/ServiceCard';
 import Button from '@/components/ui/Button';
 import CTA from '@/components/sections/CTA';
 import Image from 'next/image';
+import webdev from '@/public/images/webdev.jpg';
 
 const webDevFeatures = [
   {
@@ -73,13 +74,13 @@ export default function ServicesPage() {
                   ProTech crafts exceptional websites, videos, and brands to elevate your digital presence and drive business growth.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button>Get a Quote</Button>
-                  <Button variant="secondary">Our Work</Button>
+                  <Button href="#">Get a Quote</Button>
+                  <Button  href="#" variant="secondary">Our Work</Button>
                 </div>
               </div>
               <div className="w-full md:w-1/2 relative h-96 fade-up stagger">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaxutDE_4hsu7yo5d1tDnLIWQC1ufJXaPo1u3vYWxHARIp_TZ6KVpECjmhmDNMDPbUuGeMUbDMkg-vLqmvGVHFTHWk_cPf-whC3dDFfdKH5QtThgs94KVHQp0bnH81Fv_phaBwONC3A3v8LEjJvZKr6xkeZFbevON-B9ahohuUz_uAThpR_okPVX-pjSHU1nIEpEi4Hir6LwyX-GYgWPz-bdDwISecIkG6iPLuvrBTlxC4X_jnS--WplCWGTlv6nss7FEEarBHb6rQ"
+                  src={webdev}
                   alt="Abstract gradient"
                   fill
                   className="rounded-xl object-cover"
