@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation';
 import Button from '../ui/Button';
 import Icon from '../ui/Icon';
 import { clsx } from 'clsx';
+import Image from 'next/image';
+import Logo from '@/public/images/protech_white.png';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -25,8 +27,8 @@ export default function Header() {
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 text-white">
-            <Icon name="hub" className="text-primary text-2xl" />
-            <h2 className="text-lg font-bold leading-tight tracking-tight">ProTech</h2>
+            
+            <Image src={Logo} alt="ProTech Logo" width={100} height={24} className=" " />
           </Link>
 
           {/* Desktop Navigation */}

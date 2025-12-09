@@ -2,15 +2,15 @@ import ProjectCard from '../ui/ProjectCard';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
+    title: 'Public Health Website',
     category: 'Web Development',
-    image: '/images/project-1.jpg',
+    image: '/images/publichealth.jpg',
   },
   {
     title: 'Startup Rebranding',
     category: 'Brand Design',
-    image: '/images/project-2.jpg',
-  },
+    image: '/images/pavilionEXP.jpg',
+  },  
 ];
 
 export default function FeaturedProjects() {

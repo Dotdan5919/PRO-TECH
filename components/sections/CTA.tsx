@@ -11,7 +11,7 @@ export default function CTA({
   title, 
   description, 
   buttonText = 'Get Started',
-  buttonHref = '/contact'
+  buttonHref = '/contact' 
 }: CTAProps) {
   return (
     <section className="py-16">

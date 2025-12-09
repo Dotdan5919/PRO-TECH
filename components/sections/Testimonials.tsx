@@ -10,15 +10,15 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote: "ProTech transformed our online presence. Their team is incredibly talented, responsive, and dedicated to delivering a top-quality product.",
-    author: "Jane Doe",
-    role: "CEO, Innovate Inc.",
-    image: "/images/testimonial-1.jpg",
+    author: "Iroha Chiamaka",
+    role: "CEO, Nine to dine.",
+    image: "/images/9-dine.jpg",
   },
   {
     quote: "The web application they developed is intuitive, powerful, and has significantly improved our workflow. A truly professional team.",
-    author: "John Smith",
-    role: "Marketing Director, Fintech Solutions",
-    image: "/images/testimonial-2.jpg",
+    author: "Emma Weware",
+    role: "CEO, Weware Solutions",
+    image: "/images/weware.jpg",
   },
 ];
 
